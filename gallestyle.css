@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.logo{
+    font-size: 55px;
+    color: #fbfcfd !important;
+    font-family: italic;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slide-bar{
+    width: 50px;
+    height:100vh ;
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+.social-links img, .useful-links img{
+    width: 25px;
+    height: 5px auto;
+    cursor: pointer;
+
+}
+.social-links{
+    width: 50px;
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.useful-links{
+    width: 50px;
+    text-align: center;
+    position:absolute;
+    bottom: 30px;
+}
+.gallery-bar{
+    width: 250px;
+    height:100vh ;
+    background: linear-gradient(#221c1e, #ffc0cb);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.gallery-images img{
+    width: 235px;
+    height: 40px auto;
+    cursor: pointer;
+
+}
+.gallery-images{
+    width: 50px;
+	text-align: center;
+    position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+}
+.content{
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.moto{
+	color: #fbfcfd;
+	font-size: 20px;
+	top: 700px;
+	position: absolute;
+	transform: translateY(-50%);
+    z-index: 2;
+}
+  
+.background_img{
+    width: 100%;
+    height: 100vh;
+    background-image: url("gallery/pexels-mo-eid-9454915.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.gallery{
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 90%;
+	height: 78%;
+	left: 0;
+	top: 380px;
+	overflow: hidden;
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px); }
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px); top: 360px;}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px); top: 315px;}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px); top: 280px;}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px); top: 240px;}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px); top: 185px;}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px); top: 130px;}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px); top: 95px;}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px); top: 50px}
+#carousel figure:nth-child(10) { transform: rotateY(360deg) translateZ(288px); top: 10px;}
+
+#carousel img{
+	-webkit-filter: grayscale(0);
+	cursor: pointer;
+	transition: all .5s ease;
+	width:100%;
+    height:auto;
+}
+#carousel img:hover{
+	-webkit-filter: grayscale(0.8);
+  	transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+button{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.gallery-images img{
+	width: 245px;
+    height: 140px;
+    cursor: pointer;
+    animation: bubble 9s linear infinite;
+}
+.gallery-images{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+	justify-content: end;
+    top: -70;
+}
+
+@keyframes bubble {
+    0%{transform: translateY(0);
+    opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+            opacity: 1;
+    }
+    100%{transform: translateY(80vh);
+                opacity: 0;
+    }
+
+}
+
+
+
+    
