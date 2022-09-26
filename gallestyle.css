@@ -24,7 +24,7 @@
     justify-content: space-between;
 }
 .slide-bar{
-    width: 50px;
+    width: 50px auto;
     height:100vh ;
     background: linear-gradient(#00545d, #000729);
     position: absolute;
@@ -33,7 +33,7 @@
 }
 .menu{
     display: block;
-    width: 25px;
+    width: 25px auto;
     margin: 40px auto 0;
     cursor: pointer;
 }
