@@ -105,14 +105,14 @@
 }
 .gallery{
 	margin: 4% auto;
-	width: 210px;
-	height: 140px;
+	width: 210px auto;
+	height: 140px auto;
 	position: relative;
-	perspective: 1000px;
+	perspective: 1000px auto;
 }
 #carousel{
-	width: 100%;
-	height: 100%;
+	width: 100% auto;
+	height: 100% auto;
 	position: absolute;
 	transform-style: preserve-3d;
 	animation: rotation 20s infinite linear;
@@ -123,8 +123,8 @@
 #carousel figure{
 	display: block;
 	position: absolute;
-	width: 90%;
-	height: 78%;
+	width: 90% auto;
+	height: 78% auto;
 	left: 0;
 	top: 380px;
 	overflow: hidden;
@@ -172,13 +172,13 @@ button{
     cursor: pointer;
 }
 .gallery-images img{
-	width: 245px;
-    height: 140px;
+	width: 245px auto;
+    height: 140px auto;
     cursor: pointer;
     animation: bubble 9s linear infinite;
 }
 .gallery-images{
-    width: 100%;
+    width: 100% auto;
     display: flex;
     align-items: center;
     position: absolute;
