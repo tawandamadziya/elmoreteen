@@ -115,7 +115,7 @@
 	height: 100% auto;
 	position: absolute;
 	transform-style: preserve-3d;
-	animation: rotation 20s infinite linear;
+	animation: rotation 30s infinite linear;
 }
 #carousel:hover{
 	animation-play-state: paused;
