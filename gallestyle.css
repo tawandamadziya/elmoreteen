@@ -223,6 +223,16 @@ button{
         position: relative;
         perspective: 1000px;
     }
+	#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(88px); }
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(88px); top: 360px;}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(88px); top: 345px;}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(88px); top: 300px;}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(88px); top: 260px;}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(88px); top: 225px;}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(88px); top: 180px;}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(88px); top: 145px;}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(88px); top: 100px}
+#carousel figure:nth-child(10) { transform: rotateY(360deg) translateZ(88px); top: 60px;}
   }
 
 
