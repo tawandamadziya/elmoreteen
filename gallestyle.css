@@ -201,6 +201,29 @@ button{
     }
 
 }
+@media only screen and (max-width: 720px) {
+    .gallery-bar{
+        width: 95px;
+        height:100vh ;
+        background: linear-gradient(#00545d, #000729);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .gallery-images img{
+        width: 95px ;
+        height: 5px auto;
+        cursor: pointer;
+    
+    }
+    .gallery{
+        margin: 4% auto;
+        width: 65px;
+        height: 65px;
+        position: relative;
+        perspective: 1000px;
+    }
+  }
 
 
 
