@@ -203,7 +203,7 @@ button{
 }
 @media only screen and (max-width: 720px) {
     .gallery-bar{
-        width: 65px;
+        width: 55px;
         height:100vh ;
         background: linear-gradient(#00545d, #000729);
         position: absolute;
@@ -211,7 +211,7 @@ button{
         right: 0;
     }
     .gallery-images img{
-        width: 65px ;
+        width: 55px ;
         height: 6px auto;
         cursor: pointer;
     
