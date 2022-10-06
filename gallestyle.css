@@ -24,7 +24,7 @@
     justify-content: space-between;
 }
 .slide-bar{
-    width: 50px ;
+    width: 50px;
     height:100vh ;
     background: linear-gradient(#00545d, #000729);
     position: absolute;
@@ -33,7 +33,7 @@
 }
 .menu{
     display: block;
-    width: 25px ;
+    width: 25px;
     margin: 40px auto 0;
     cursor: pointer;
 }
@@ -104,18 +104,18 @@
     overflow: hidden;
 }
 .gallery{
-	margin: 4% ;
-	width: 210px ;
-	height: 140px ;
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
 	position: relative;
-	perspective: 1000px auto;
+	perspective: 1000px;
 }
 #carousel{
-	width: 100% ;
-	height: 100% ;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	transform-style: preserve-3d;
-	animation: rotation 30s infinite linear;
+	animation: rotation 20s infinite linear;
 }
 #carousel:hover{
 	animation-play-state: paused;
@@ -123,8 +123,8 @@
 #carousel figure{
 	display: block;
 	position: absolute;
-	width: 90% ;
-	height: 78% ;
+	width: 90%;
+	height: 78%;
 	left: 0;
 	top: 380px;
 	overflow: hidden;
@@ -172,13 +172,13 @@ button{
     cursor: pointer;
 }
 .gallery-images img{
-	width: 245px ;
-    height: 140px ;
+	width: 245px;
+    height: 140px;
     cursor: pointer;
     animation: bubble 9s linear infinite;
 }
 .gallery-images{
-    width: 100% ;
+    width: 100%;
     display: flex;
     align-items: center;
     position: absolute;
@@ -201,67 +201,6 @@ button{
     }
 
 }
-@media only screen and (max-width: 720px) {
-    .gallery-bar{
-        width: 55px;
-        height:100vh ;
-        background: linear-gradient(#00545d, #000729);
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .gallery-images img{
-        width: 55px ;
-        height: 6px auto;
-        cursor: pointer;
-    
-    }
-    .gallery{
-        margin: 4% auto;
-        width: 65px;
-        height: 65px;
-        position: relative;
-        perspective: 1000px;
-    }
-	#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(88px); }
-#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(88px); top: 360px;}
-#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(88px); top: 345px;}
-#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(88px); top: 300px;}
-#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(88px); top: 260px;}
-#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(88px); top: 225px;}
-#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(88px); top: 180px;}
-#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(88px); top: 145px;}
-#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(88px); top: 100px}
-#carousel figure:nth-child(10) { transform: rotateY(360deg) translateZ(88px); top: 60px;}
-.logo{
-    font-size: 20px;
-    color: #fbfcfd !important;
-    font-family: italic;
-    cursor: pointer;
-    border: 1px solid #fff;
-    border-radius: 20px;
-    outline: none;
-    padding: 10px 25px;
-}	
-.content{
-    color: #fbfcfd;
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    z-index: 2;
-    font-size: 10px;
-
-}
-	   .slide-bar{
-        width: 40px ;
-        height:100vh ;
-        background: linear-gradient(#00545d, #000729);
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-  }
 
 
 
